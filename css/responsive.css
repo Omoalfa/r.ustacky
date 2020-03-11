@@ -1,0 +1,27 @@
+@media screen and (min-width : 480px) {
+	#topcenter_m {
+		display: none;
+	}
+	#topcenter {
+		display: block;
+	}
+	.mycards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    text-align: center;
+    padding: 5%;
+	}
+	.no_m {
+		display: block;
+	}
+	.px-5 a {
+    display: inline-block;
+	}
+	footer {
+		display: block;
+	}
+	#chat {
+        display: inline-block;
+	}
+}
