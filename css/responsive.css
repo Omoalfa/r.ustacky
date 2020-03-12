@@ -18,10 +18,42 @@
 	.px-5 a {
     display: inline-block;
 	}
+	.bordered {
+	    border-right: 1px solid black;
+	}
+	#last {
+	    border: none;
+	}
+
 	footer {
 		display: block;
 	}
+	#footer_m {
+		display: none;
+	}
 	#chat {
         display: inline-block;
+	}
+	.px-5 {
+	    text-align: left;
+	    display: grid;
+		grid-template-columns: 3fr 2fr;
+	}
+	.px-5 a {
+	    display: inline-block;
+	    margin: auto 2%;
+	    transform: translateY(50%);
+	}
+	#chat {
+		display: inline-block;
+	}
+	@media screen and (min-width : 750px) {
+		.active {
+			display: none;
+		}
+		@media screen and (min-width : 800px) {
+		.active {
+			display: inline-block;
+		}
 	}
 }
