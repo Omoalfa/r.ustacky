@@ -4,6 +4,20 @@
 	}
 	#topcenter {
 		display: block;
+		/*text-align: left;
+		margin-left: 25%;
+		margin-right: 25%;
+		transform: translateX(25%);
+	}
+	#topcenter h1 {
+		margin: 0;*/
+	}
+	.check {
+		background-color: #1DBF73;
+		padding: 10px 40px;
+		border-radius: none;
+		margin: 10px;
+		border: none;
 	}
 	.mycards {
     display: grid;
@@ -11,6 +25,22 @@
     grid-column-gap: 2%;
     text-align: center;
     padding: 5%;
+	}
+	.ready {
+	    padding: 5% 10%;
+	    background-image: url(../images/ready_to_begin.jpg);
+	    background-color: #35332B;
+	    background-blend-mode: overlay;
+	    background-size: cover;
+	    background-position: center;
+	    color: white;
+	    margin: 5% 0;
+	}
+	.ready a.btn {
+	    padding: 10px 40px;
+	    border-radius: 40px;
+	    background-color: #1DBF73;
+	    border: none;
 	}
 	.no_m {
 		display: block;
@@ -24,7 +54,26 @@
 	#last {
 	    border: none;
 	}
-
+	.make {
+		padding: 5%;
+		text-align: left;
+	}
+	.last {
+	    padding: 5%;
+	    text-align: left;
+	    display: grid;
+	    grid-template-columns: 3fr 2fr;
+	}
+	.last h4 {
+	    padding: 0;
+	}
+	.last a {
+	    display: inline-block;
+	}
+	.nav-link {
+		margin: 5px;
+		color: white;
+	}
 	footer {
 		display: block;
 	}

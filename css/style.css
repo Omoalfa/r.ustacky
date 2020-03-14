@@ -1,9 +1,13 @@
 body {
     font-family: raleway;
     background-color: #FBFBFB;
+    box-sizing: border-box;
 }
 img {
     width: 166px
+}
+#arrow {
+    transform: rotate(180deg);
 }
 #topcenter {
     display: none;
@@ -13,6 +17,7 @@ img {
     background-color: #D2F1E2;
     padding: 0;
     padding-bottom: 20px;
+    margin-bottom: 50px; 
      
 }
 .bg1 {
@@ -26,23 +31,23 @@ img {
 /*    height: 774px;*/
     background-image: url(../images/15120-architecture-blue-269077.jpg);
     background-size: cover;
-    background-color: #323639;
-    background-blend-mode: multiply;
+    background-color: #35332B;
+    background-blend-mode: overlay;
     color: white;
     padding: 7%;
 }
 .bgg {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
 }
-.navbar-brand {
-        margin: -20px;
-    }
-.started {
+form {
+    margin-bottom: 100px; 
+}
+#started {
     background-color: #1DBF73;
-    border-radius: 30px;
-    /*padding: 2% 4%;*/
+    border-radius: 20px;
+    padding: 10px 25px;
     text-align: center;
-    box-sizing: border-box;
+ /*   box-sizing: border-box;*/
 }
 #topcenter_m {
         display: block; 
@@ -52,7 +57,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3%;
-        grid-row-gap: 4%;
+        grid-row-gap: 10%;
 }
 input {
     width: 100%;
@@ -69,18 +74,24 @@ input {
     margin: 15% auto;
     transform: translateY(50);
 }
-
-.mycards {
+/*.padding {
+    margin: 5%;
+}
+*/.mycards {
     display: block;
     padding: 5%;
 }
 .mycards img {
     width: 50px;
+    margin: 12px;
+}
+.school {
+    color: #1DBF73;
 }
 .mycards a {
     background-color: white;
     display: block;
-    margin: 10%;
+    margin: 5% 10%;
     padding: 10%;
     text-decoration: none;
     color: black;
@@ -97,19 +108,23 @@ input {
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 5px 5px 3px #BBB;
-    margin: 5%;
+    margin: 5% 0;
 /*    height: 200px;*/
 }
 .child05 img {
     width: 100%;
-    /*min-height: 100%;*/
+    min-height: 100%;
 }
 .nav-toggler-icon {
     color: white;
 }
 .child05 div {
-    padding: 0 2%;
-    text-align: left;  
+    padding: 3% 2%;
+    text-align: left;
+    font-size: 0.5em; 
+}
+.child05 div h5 {
+    font-size: 1.4em; 
 }
 .child05 div a {
     text-decoration: none;
@@ -120,6 +135,26 @@ input {
     text-decoration: underline;
     color: black;
     padding-bottom: 10px;
+}
+.ready {
+    padding: 10%;
+    background-image: url(../images/ready_to_begin.jpg);
+    background-color: #35332B;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 10% 0;
+}
+.ready a.btn {
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-color: #1DBF73;
+    border: none;
+}
+.card {
+    border: none;
+    box-shadow: 5px 5px 3px #999;
 }
 .logos img {
     max-height: 40px;
@@ -143,17 +178,10 @@ input {
 .logos {
     margin-bottom: 4%;
 }
-i {
-    font-size: 50px;
-}
-.ready {
-    padding: 4%;
-    background-image: url(../images/ready_to_begin.jpg);
-    background-color: #35332B;
-    background-blend-mode: multiply;
-    background-size: cover;
-    color: white;
-    margin: 7% 0;
+div.col-md-3 i {
+    font-size: 35px;
+    color: #1DBF73;
+    font-weight: 20%;
 }
 .no_m {
     display: none;
@@ -162,6 +190,9 @@ i {
     width: 50px;
     margin: 10px 7px 40px 5px;
     float: left;
+}
+.col-md-4 {
+    margin: 0;
 }
 .link {
     text-align: center;
@@ -186,8 +217,11 @@ i {
     background-color: white;
     color: #1DBF73;
     border-radius: 40px;
-    border: 1px #1DBF73 solid;
+    border: none;
     margin: 2%;
+}
+.col-md-3 {
+    margin-bottom: 3%;
 }
 .col-md-8 video {
     display: block;
@@ -197,18 +231,32 @@ i {
     font-weight: 500;
 }
 .padding {
-    padding: 2% 13%;
+    padding: 2% 10%;
 }
 .make {
     background-color: #1DBF73;
-    text-align: left;
-    padding: 3%;
+    text-align: center;
+    padding: 13%;
     color: white;
 }
-.px-5 {
+.make h5 {
+    font-size: 1.5em;
+}
+.make a {
+    padding: 10px 40px;
+    color: black;
+}
+.last {
+    padding: 13%;
     text-align: center;
 }
-.px-5 a {
+.last div a {
+    box-shadow: 5px 5px 3px #999;
+}
+.last h4 {
+    padding: 4%;
+}
+.last a {
     display: none;
 }
 .f_content ul li {
@@ -283,6 +331,7 @@ footer {
         text-align: center;
 }
 #chat {
+    font-size: 30px;
     float: right;
     padding: 7px;
     background-color: #1DBF73;
@@ -293,6 +342,7 @@ footer {
 /*    margin-top: -25px;*/
 }
 #chat:hover {
+    font-size: 30px;
     float: right;
     padding: 7px;
     background-color: white;
