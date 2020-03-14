@@ -49,6 +49,9 @@ form {
     text-align: center;
  /*   box-sizing: border-box;*/
 }
+.navbar {
+    color: white;
+}
 #topcenter_m {
         display: block; 
         margin-bottom: 20%;
