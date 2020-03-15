@@ -1,23 +1,36 @@
 @media screen and (min-width : 480px) {
+	.bg0 {
+	    width: 100%;
+	/*    height: 774px;*/
+	    background-image: url(../images/architecture-blue_1.jpg);
+	    background-size: cover;
+	    background-color: #253A4A;
+	    background-blend-mode: multiply;
+	    background-position: center;
+	    color: white;
+	    padding: 2% 7%;
+	}
 	#topcenter_m {
 		display: none;
 	}
 	#topcenter {
 		display: block;
-		/*text-align: left;
-		margin-left: 25%;
-		margin-right: 25%;
-		transform: translateX(25%);
 	}
-	#topcenter h1 {
-		margin: 0;*/
+	#Mnav {
+		display: none;
+	}
+	#Dnav {
+		display: grid;
+		grid-template-columns: auto auto;
 	}
 	.check {
 		background-color: #1DBF73;
-		padding: 10px 40px;
-		border-radius: none;
-		margin: 10px;
+		padding: 10px 100px;
+		border-radius: 0;
+		font-weight: 700;
+		margin: 10px 30px;
 		border: none;
+		text-align: center;
 	}
 	.mycards {
     display: grid;
@@ -26,11 +39,17 @@
     text-align: center;
     padding: 5%;
 	}
+	.make {
+	    background-color: #1DBF73;
+	    text-align: center;
+	    padding: 5%;
+	    color: white;
+	}
 	.ready {
 	    padding: 5% 10%;
-	    background-image: url(../images/ready_to_begin.jpg);
-	    background-color: #35332B;
-	    background-blend-mode: overlay;
+	    background-image: url(../images/depositphotos_1.jpg);
+	    background-color: #253A4A;
+	    background-blend-mode: multiply;
 	    background-size: cover;
 	    background-position: center;
 	    color: white;
@@ -54,25 +73,12 @@
 	#last {
 	    border: none;
 	}
-	.make {
-		padding: 5%;
-		text-align: left;
-	}
-	.last {
-	    padding: 5%;
-	    text-align: left;
-	    display: grid;
-	    grid-template-columns: 3fr 2fr;
-	}
-	.last h4 {
-	    padding: 0;
-	}
-	.last a {
-	    display: inline-block;
-	}
+	
 	.nav-link {
-		margin: 5px;
+		margin: 2px;
 		color: white;
+		display: inline;
+		font-size: 0.8em;
 	}
 	footer {
 		display: block;
@@ -97,12 +103,54 @@
 		display: inline-block;
 	}
 	@media screen and (min-width : 750px) {
+		.last {
+		    padding: 5%;
+		    text-align: left;
+		    display: grid;
+		    grid-template-columns: 3fr 2fr;
+		}
+		.padding {
+			padding: 2% 7%;
+		}
+		.last h4 {
+		    padding: 0;
+		}
+	
+		.last a {
+		    display: inline-block;
+		    float: right;
+		}
 		.active {
 			display: none;
 		}
-		@media screen and (min-width : 800px) {
+		#NavBar {
+			margin: 10px 0;
+		}
+		.nav-link {
+			margin: 0;
+		}
+		@media screen and (min-width : 820px) {
 		.active {
 			display: inline-block;
 		}
+		#NavBar {
+			margin: 0;
+		}
+		.nav-link {
+			margin: 5px 0;
+		}
+	}
+}
+
+@media screen and (min-width: 970) {
+	.make {
+		padding: 5%;
+		text-align: left;
+	}
+}
+@media screen and (min-width: 570) {
+	.card {
+		margin-right: 0;
+		margin-left: 0; 
 	}
 }
