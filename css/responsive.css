@@ -129,11 +129,8 @@
 			margin: 0;
 		}
 		@media screen and (min-width : 820px) {
-		.active {
-			display: inline-block !important;
-		}
 		#NavBar {
-			margin: 0;
+			margin: 10px 0;
 		}
 		.nav-link {
 			margin: 5px 0;
@@ -151,6 +148,9 @@
 		}
 	}
 	@media screen and (min-width: 970) {
+		.active {
+			display: inline-block !important;
+		}
 		.make {
 			padding: 5%;
 			text-align: left;
