@@ -16,12 +16,12 @@
 	#topcenter {
 		display: block;
 	}
-	#Mnav {
-		display: none;
+	.child05 img {
+	    width: 100%;
+	    min-height: auto;
 	}
-	#Dnav {
-		display: grid;
-		grid-template-columns: auto auto;
+	.active {
+		display: none !important;
 	}
 	.check {
 		background-color: #1DBF73;
@@ -32,13 +32,6 @@
 		border: none;
 		text-align: center;
 	}
-	.mycards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2%;
-    text-align: center;
-    padding: 5%;
-	}
 	.make {
 	    background-color: #1DBF73;
 	    text-align: center;
@@ -47,7 +40,7 @@
 	}
 	.ready {
 	    padding: 5% 10%;
-	    background-image: url(../images/Depositphotos_1.jpg);
+	    background-image: url(../images/depositphotos_1.jpg);
 	    background-color: #253A4A;
 	    background-blend-mode: multiply;
 	    background-size: cover;
@@ -66,12 +59,6 @@
 	}
 	.px-5 a {
     display: inline-block;
-	}
-	.bordered {
-	    border-right: 1px solid black;
-	}
-	#last {
-	    border: none;
 	}
 	
 	.nav-link {
@@ -103,11 +90,26 @@
 		display: inline-block;
 	}
 	@media screen and (min-width : 750px) {
+		#Mnav {
+			display: none;
+		}
+		#Dnav {
+			display: grid;
+			grid-template-columns: auto auto;
+			padding: 0;
+			margin: 0;
+		}
 		.last {
 		    padding: 5%;
 		    text-align: left;
 		    display: grid;
 		    grid-template-columns: 3fr 2fr;
+		}
+		.bordered {
+		    border-right: 1px solid black;
+		}
+		#last {
+		    border: none;
 		}
 		.padding {
 			padding: 2% 7%;
@@ -120,9 +122,6 @@
 		    display: inline-block;
 		    float: right;
 		}
-		.active {
-			display: none;
-		}
 		#NavBar {
 			margin: 10px 0;
 		}
@@ -131,7 +130,7 @@
 		}
 		@media screen and (min-width : 820px) {
 		.active {
-			display: inline-block;
+			display: inline-block !important;
 		}
 		#NavBar {
 			margin: 0;
@@ -139,18 +138,30 @@
 		.nav-link {
 			margin: 5px 0;
 		}
+		.mycards {
+		    display: grid;
+		    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		    grid-column-gap: 2%;
+		    text-align: center;
+		    padding: 5%;
+		}
+		.child05 img {
+		    width: 100%;
+		    min-height: 100%;
+		}
+	}
+	@media screen and (min-width: 970) {
+		.make {
+			padding: 5%;
+			text-align: left;
+		}
+	}
+	@media screen and (min-width: 570) {
+		.card {
+			margin-right: 0;
+			margin-left: 0; 
+		}
 	}
 }
 
-@media screen and (min-width: 970) {
-	.make {
-		padding: 5%;
-		text-align: left;
-	}
-}
-@media screen and (min-width: 570) {
-	.card {
-		margin-right: 0;
-		margin-left: 0; 
-	}
-}
+
