@@ -105,29 +105,8 @@ input {
     letter-spacing: 2px;
     word-spacing: 3px;
 }
-/*.padding {
-    margin: 5%;
-}
-*/.mycards {
-    display: block;
-    padding: 5%;
-}
-.mycards img {
-    width: 50px;
-    margin: 12px;
-}
-.mycards a {
-    background-color: white;
-    display: block;
-    margin: 5% 10%;
-    padding: 10%;
-    text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px 3px #999;
-    }
-.mycards a:hover {
-    background-color: #1DBF73;
-    color: white;
+.card {
+    width: 100%;
 }
 .child05 {
     width: 100%;
