@@ -8,7 +8,7 @@
 	    background-blend-mode: multiply;
 	    background-position: center;
 	    color: white;
-	    padding: 2% 7%;
+	    padding: 2% 5%;
 	}
 	#topcenter_m {
 		display: none;
@@ -26,11 +26,17 @@
 	.check {
 		background-color: #1DBF73;
 		padding: 10px 100px;
+		width: 60%;
 		border-radius: 0;
 		font-weight: 700;
 		margin: 10px 30px;
 		border: none;
 		text-align: center;
+	}
+	.check:hover {
+		background-color: white;
+		color: #1DBF73;
+		border: 1px solid #1DBF73;
 	}
 	.make {
 	    background-color: #1DBF73;
@@ -40,7 +46,6 @@
 	}
 	.ready {
 	    padding: 5% 10%;
-	    background-image: url(../images/depositphotos_1.jpg);
 	    background-color: #253A4A;
 	    background-blend-mode: multiply;
 	    background-size: cover;
@@ -48,12 +53,12 @@
 	    color: white;
 	    margin: 5% 0;
 	}
-	.ready a.btn {
+	/*.ready a.btn {
 	    padding: 10px 40px;
 	    border-radius: 40px;
 	    background-color: #1DBF73;
 	    border: none;
-	}
+	}*/
 	.no_m {
 		display: block;
 	}
@@ -90,20 +95,9 @@
 		display: inline-block;
 	}
 	@media screen and (min-width : 750px) {
-		#Mnav {
-			display: none;
-		}
-		#Dnav {
-			display: grid;
-			grid-template-columns: auto auto;
-			padding: 0;
-			margin: 0;
-		}
 		.last {
 		    padding: 5%;
 		    text-align: left;
-		    display: grid;
-		    grid-template-columns: 3fr 2fr;
 		}
 		.bordered {
 		    border-right: 1px solid black;
@@ -117,11 +111,6 @@
 		.last h4 {
 		    padding: 0;
 		}
-	
-		.last a {
-		    display: inline-block;
-		    float: right;
-		}
 		#NavBar {
 			margin: 10px 0;
 		}
@@ -129,24 +118,26 @@
 			margin: 0;
 		}
 		@media screen and (min-width : 820px) {
-		#NavBar {
-			margin: 10px 0;
+			#Mnav {
+				display: none;
+			}
+			#Dnav {
+				display: grid;
+				grid-template-columns: auto auto;
+				padding: 0;
+				margin: 0;
+			}
+			#NavBar {
+				margin: 5px 0;
+			}
+			.nav-link {
+				margin: 0;
+			}
+			.child05 img {
+			    width: 100%;
+			    min-height: 100%;
+			}
 		}
-		.nav-link {
-			margin: 5px 0;
-		}
-		.mycards {
-		    display: grid;
-		    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		    grid-column-gap: 2%;
-		    text-align: center;
-		    padding: 5%;
-		}
-		.child05 img {
-		    width: 100%;
-		    min-height: 100%;
-		}
-	}
 	@media screen and (min-width: 970) {
 		.active {
 			display: inline-block !important;
