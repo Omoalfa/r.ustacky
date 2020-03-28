@@ -21,6 +21,9 @@ img {
 .nav-link {
     margin: 0 !important;
 }
+.nav-link:hover {
+    color: #1DBF73 !important;
+}
 #topcenter {
     display: none;
 }
@@ -105,8 +108,29 @@ input {
     letter-spacing: 2px;
     word-spacing: 3px;
 }
-.card {
-    width: 100%;
+/*.padding {
+    margin: 5%;
+}
+*/.mycards {
+    display: block;
+    padding: 5%;
+}
+.mycards img {
+    width: 50px;
+    margin: 12px;
+}
+.mycards a {
+    background-color: white;
+    display: block;
+    margin: 5% 10%;
+    padding: 10%;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 3px #999;
+    }
+.mycards a:hover {
+    background-color: #1DBF73;
+    color: white;
 }
 .child05 {
     width: 100%;
@@ -176,6 +200,8 @@ input {
     border: none;
     box-shadow: 5px 5px 3px #999;
     margin-right: 3rem;
+    margin-left: 3rem;
+    width: 100%;
 }
 .fab {
     font-size: 70px;

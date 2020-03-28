@@ -29,9 +29,10 @@
 		width: 60%;
 		border-radius: 0;
 		font-weight: 700;
-		margin: 10px 20%;
+		margin: 10px 30px;
 		border: none;
 		text-align: center;
+		color: white;
 	}
 	.check:hover {
 		background-color: white;
@@ -53,14 +54,11 @@
 	    color: white;
 	    margin: 5% 0;
 	}
-	/*.ready a.btn {
-	    padding: 10px 40px;
-	    border-radius: 40px;
-	    background-color: #1DBF73;
-	    border: none;
-	}*/
 	.no_m {
 		display: block;
+	}
+	#topcenter {
+		padding-left: 5%;
 	}
 	.px-5 a {
     display: inline-block;
@@ -94,65 +92,70 @@
 	#chat {
 		display: inline-block;
 	}
-	@media screen and (min-width : 750px) {
-		.last {
-		    padding: 5%;
-		    text-align: left;
-		}
-		.bordered {
-		    border-right: 1px solid black;
-		}
-		#last {
-		    border: none;
-		}
-		.padding {
-			padding: 2% 7%;
-		}
-		.last h4 {
-		    padding: 0;
-		}
-		#NavBar {
-			margin: 10px 0;
-		}
-		.nav-link {
-			margin: 0;
-		}
-		@media screen and (min-width : 820px) {
-			#Mnav {
-				display: none;
-			}
-			#Dnav {
-				display: grid;
-				grid-template-columns: auto auto;
-				padding: 0;
-				margin: 0;
-			}
-			#NavBar {
-				margin: 5px 0;
-			}
-			.nav-link {
-				margin: 0;
-			}
-			.child05 img {
-			    width: 100%;
-			    min-height: 100%;
-			}
-		}
-	@media screen and (min-width: 970) {
-		.active {
-			display: inline-block !important;
-		}
-		.make {
-			padding: 5%;
-			text-align: left;
-		}
-	}
-	@media screen and (min-width: 570) {
-		.card {
-			margin-right: 0;
-			margin-left: 0; 
-		}
+}
+@media screen and (min-width: 570) {
+	.card {
+		margin-right: 0;
+		margin-left: 0; 
 	}
 }
-
-
+@media screen and (min-width : 750px) {
+	.last {
+	    padding: 5%;
+	    text-align: left;
+	}
+	.bordered {
+	    border-right: 1px solid black;
+	}
+	#last {
+	    border: none;
+	}
+	.padding {
+		padding: 2% 7%;
+	}
+	.last h4 {
+	    padding: 0;
+	}
+	#NavBar {
+		margin: 10px 0;
+	}
+	.nav-link {
+		margin: 0;
+	}
+}
+@media screen and (min-width : 820px) {
+	#Mnav {
+		display: none;
+	}
+	#Dnav {
+		display: grid;
+		grid-template-columns: auto auto;
+		padding: 0;
+		margin: 0;
+	}
+	#topcenter {
+		margin-left: 3%;
+	}
+	#NavBar {
+		margin: 5px 0;
+	}
+	.nav-link {
+		margin: 0;
+	}
+	.child05 img {
+	    width: 100%;
+	    min-height: 100%;
+	}
+}
+@media screen and (min-width: 970px) {
+	.active {
+		display: inline-block !important;
+	}
+	#topcenter {
+		padding-left: 12%;
+	}
+	.make {
+		padding: 5%;
+		text-align: left;
+	}
+}
