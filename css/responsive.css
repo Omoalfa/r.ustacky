@@ -10,34 +10,18 @@
 	    color: white;
 	    padding: 2% 5%;
 	}
-	#topcenter_m {
-		display: none;
-	}
-	#topcenter {
-		display: block;
-	}
+	#topcenter h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
 	.child05 img {
 	    width: 100%;
 	    min-height: auto;
 	}
 	.active {
 		display: none !important;
-	}
-	.check {
-		background-color: #1DBF73;
-		padding: 10px 100px;
-		width: 60%;
-		border-radius: 0;
-		font-weight: 700;
-		margin: 10px 30px;
-		border: none;
-		text-align: center;
-		color: white;
-	}
-	.check:hover {
-		background-color: white;
-		color: #1DBF73;
-		border: 1px solid #1DBF73;
 	}
 	.make {
 	    background-color: #1DBF73;
@@ -157,5 +141,10 @@
 	.make {
 		padding: 5%;
 		text-align: left;
+	}
+}
+@media screen and (min-width: 768px) {
+	.accordion {
+		box-shadow: none !important;
 	}
 }

@@ -24,9 +24,6 @@ img {
 .nav-link:hover {
     color: #1DBF73 !important;
 }
-#topcenter {
-    display: none;
-}
 .clear {
     clear: both;
 }
@@ -76,37 +73,34 @@ form {
     border: 1px solid #1DBF73;
     text-align: center;
 }
-#topcenter_m {
-        display: block; 
-        margin-bottom: 20%;
-}
-#topcenter_m form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 3%;
-        grid-row-gap: 10%;
-}
-input {
-    width: 100%;
-    background-color: transparent;
-    background-blend-mode: color-dodge(100%);
-    border: 1px solid white;
+.check {
+    background-color: #1DBF73;
+    padding: 10px 0px;
+    width: 60%;
+    border-radius: 0;
+    font-weight: 700;
+    margin: 10px 30px;
+    border: none;
+    text-align: center;
     color: white;
-    height: 35px;
 }
-.full {
-    column-count: 2;
-    grid-column: 1/3;
+.check:hover {
+    background-color: white;
+    color: #1DBF73;
+    border: 1px solid #1DBF73;
 }
 #topcenter {
     margin-top: 10%;
     margin-bottom: 25%;
 }
 #topcenter h1 {
-    font-size: 4rem;
+    font-size: 1.7rem;
     font-weight: 400;
     letter-spacing: 2px;
     word-spacing: 3px;
+}
+.h5 {
+    font-size: 1.25rem !important;
 }
 /*.padding {
     margin: 5%;
@@ -200,7 +194,6 @@ input {
     border: none;
     box-shadow: 5px 5px 3px #999;
     margin-right: 3rem;
-    margin-left: 3rem;
     width: 100%;
 }
 .fab {
@@ -311,6 +304,13 @@ div.col-md-3 i {
 .f_content ul li {
     list-style: none;
 }
+.f_content > a.nav-link {
+    padding: 2% auto;
+}
+#accordion {
+    background-color: #343a40;
+    box-shadow: 5px 5px 3px #292f35;
+}
 footer ul {
     padding: 0;
 }
@@ -331,8 +331,12 @@ footer a:hover {
     font-size: 20px;
     margin: 2px;
 }
+a.h5 > i {
+    float: right;
+    margin-right: 3%;
+}
 footer {
-    display: none;
+    /*display: none;*/
     padding-left: 5% !important;
     padding-right: 5% !important;
     padding-top: 5%;
@@ -344,15 +348,12 @@ footer {
     border: 1px solid white;
     padding: 4px;
     border-radius: 15px;
-    float: right;
     margin-right: inherit;
     margin-bottom: 4px;
+    width: 90%;
 }
 #footer {
-    display: grid;
-    grid-template-columns: auto auto;
     text-align: left;
-    padding: 3px 7%;
 }
 #footer ul li {
     display: inline;
@@ -362,13 +363,6 @@ footer {
 #footer ul {
     margin: 0;
     padding: 0;
-}
-#footer_m {
-        display: block;
-        background-color: black;
-        color: white;
-        padding: 1%;
-        text-align: center;
 }
 #chat {
     display: none;
