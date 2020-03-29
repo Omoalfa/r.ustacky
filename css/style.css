@@ -307,6 +307,10 @@ div.col-md-3 i {
 .f_content > a.nav-link {
     padding: 2% auto;
 }
+.f_content > a.nav-link:hover {
+    padding: 2% auto;
+    color: black !important;
+}
 #accordion {
     background-color: #343a40;
     box-shadow: 5px 5px 3px #292f35;
