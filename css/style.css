@@ -79,7 +79,7 @@ form {
     width: 60%;
     border-radius: 0;
     font-weight: 700;
-    margin: 10px 30px;
+    margin: 10px 20%;
     border: none;
     text-align: center;
     color: white;
@@ -105,26 +105,9 @@ form {
 /*.padding {
     margin: 5%;
 }
-*/.mycards {
-    display: block;
-    padding: 5%;
-}
-.mycards img {
-    width: 50px;
-    margin: 12px;
-}
-.mycards a {
-    background-color: white;
-    display: block;
-    margin: 5% 10%;
-    padding: 10%;
-    text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px 3px #999;
-    }
-.mycards a:hover {
-    background-color: #1DBF73;
-    color: white;
+*/
+.card01 {
+    margin: 2% 5%; 
 }
 .child05 {
     width: 100%;
@@ -193,7 +176,6 @@ form {
 .card {
     border: none;
     box-shadow: 5px 5px 3px #999;
-    margin-right: 3rem;
     width: 100%;
 }
 .fab {
@@ -309,11 +291,13 @@ div.col-md-3 i {
 }
 .f_content > a.nav-link:hover {
     padding: 2% auto;
-    color: black !important;
+    color: white !important;
 }
 #accordion {
     background-color: #343a40;
     box-shadow: 5px 5px 3px #292f35;
+    margin: auto;
+    padding-left: 3%;
 }
 footer ul {
     padding: 0;
@@ -340,7 +324,7 @@ a.h5 > i {
     margin-right: 3%;
 }
 footer {
-    /*display: none;*/
+    text-align: center;
     padding-left: 5% !important;
     padding-right: 5% !important;
     padding-top: 5%;

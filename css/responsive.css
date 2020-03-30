@@ -10,8 +10,11 @@
 	    color: white;
 	    padding: 2% 5%;
 	}
+	.check {
+		margin: 10px 30px;
+	}
 	#topcenter h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 2px;
     word-spacing: 3px;
@@ -54,12 +57,6 @@
 		display: inline;
 		font-size: 0.8em;
 	}
-	footer {
-		display: block;
-	}
-	#footer_m {
-		display: none;
-	}
 	#chat {
         display: inline-block;
 	}
@@ -77,10 +74,14 @@
 		display: inline-block;
 	}
 }
-@media screen and (min-width: 570) {
-	.card {
-		margin-right: 0;
-		margin-left: 0; 
+@media screen and (min-width: 570px) {
+	#topcenter h1 {
+		font-size: 3rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	#topcenter h1 {
+		font-size: 4rem;
 	}
 }
 @media screen and (min-width : 750px) {
