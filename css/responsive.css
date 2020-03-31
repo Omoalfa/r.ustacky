@@ -143,6 +143,12 @@
 		padding: 5%;
 		text-align: left;
 	}
+	.child05 div h5 {
+		font-size: 1rem
+	}
+	.child05 div p {
+		font-size: 0.8rem;
+	}
 }
 @media screen and (min-width: 768px) {
 	.accordion {
