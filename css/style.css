@@ -105,7 +105,6 @@ form {
 }
 .child05 img {
     width: 100%;
-    min-height: 100%;
 }
 .child05 div:nth-child(2) {
     padding: 2% 1%;
@@ -131,9 +130,6 @@ form {
 .ready {
     padding: 10%;
     background-color: #253A4A;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
     color: white;
     margin: 10% 0;
 }
@@ -260,12 +256,17 @@ div.col-md-3 i {
 .make h5 {
     font-size: 1.5em;
 }
-.last {
-    padding: 13%;
-    text-align: center;
+h4.row {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
 }
-.last h4 {
-    padding: 4%;
+a.h5, div.h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.f_content {
+    font-size: 14px;
 }
 .f_content ul li {
     list-style: none;
@@ -307,11 +308,12 @@ a.h5 > i {
     float: right;
     margin-right: 3%;
 }
+footer > .container-fluid {
+    padding: 0;
+}
 footer {
     background-color: #262727;
     text-align: center;
-    padding-left: 5% !important;
-    padding-right: 5% !important;
     padding-top: 5%;
     color: white;
     margin-top: 25px;
@@ -325,7 +327,10 @@ footer {
     width: 90%;
 }
 #footer {
-    text-align: left;
+    text-align: center;
+}
+#footer > .row, footer .container-fluid > .row {
+    margin: 0 !important;
 }
 #footer ul li {
     display: inline;

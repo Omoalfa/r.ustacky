@@ -14,10 +14,6 @@
 	    letter-spacing: 2px;
 	    word-spacing: 3px;
 	}
-	.child05 img {
-	    width: 100%;
-	    min-height: auto;
-	}
 	.active {
 		display: none !important;
 	}
@@ -30,9 +26,6 @@
 	.ready {
 	    padding: 5% 10%;
 	    background-color: #253A4A;
-	    background-blend-mode: multiply;
-	    background-size: cover;
-	    background-position: center;
 	    color: white;
 	    margin: 5% 0;
 	}
@@ -121,10 +114,6 @@
 	.nav-link {
 		margin: 0;
 	}
-	.child05 img {
-	    width: 100%;
-	    min-height: 100%;
-	}
 }
 @media screen and (min-width: 970px) {
 	.active {
@@ -147,5 +136,14 @@
 @media screen and (min-width: 768px) {
 	.accordion {
 		box-shadow: none !important;
+	}
+	footer {
+		text-align: left;
+	}
+	#footer {
+		text-align: left;
+	}
+	.f_content {
+		padding: 0;
 	}
 }
